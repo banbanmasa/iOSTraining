@@ -6,5 +6,7 @@ let o: String? = "o"
 var world: String! = nil
 world = " world!"
 
-//let helloWorld: String
-//print(helloWorld)
+let h2 = h ?? ""
+let o2 = o ?? ""
+let world2 = world ?? ""
+print("\(h2)\(ell)\(o2)\(world2)")
