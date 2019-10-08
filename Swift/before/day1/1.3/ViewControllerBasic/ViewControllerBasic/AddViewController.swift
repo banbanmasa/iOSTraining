@@ -9,6 +9,7 @@
 import UIKit
 
 class AddViewController: UIViewController {
+    @IBOutlet weak var label: UILabel!
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -16,7 +17,9 @@ class AddViewController: UIViewController {
         // Do any additional setup after loading the view.
     }
     
-
+    @IBAction func buttonTapped(_ sender: UIButton) {
+         label.text = "YES"
+     }
     /*
     // MARK: - Navigation
 

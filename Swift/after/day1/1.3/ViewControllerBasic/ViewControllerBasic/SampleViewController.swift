@@ -11,6 +11,7 @@ import UIKit
 class SampleViewController: UIViewController {
 
     @IBOutlet weak var grayView: UIView!
+    @IBOutlet weak var label: UILabel!
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -24,6 +25,9 @@ class SampleViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
     
+    @IBAction func buttonTapped(_ sender: UIButton) {
+        label.text = "YES"
+    }
     @IBAction func pressButton(_ sender: AnyObject) {
         grayView.backgroundColor = .green
     }

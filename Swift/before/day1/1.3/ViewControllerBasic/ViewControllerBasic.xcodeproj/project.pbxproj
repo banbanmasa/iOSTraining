@@ -12,6 +12,7 @@
 		374695651DB34A050001A122 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 374695631DB34A050001A122 /* Main.storyboard */; };
 		374695671DB34A050001A122 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 374695661DB34A050001A122 /* Assets.xcassets */; };
 		3746956A1DB34A050001A122 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 374695681DB34A050001A122 /* LaunchScreen.storyboard */; };
+		D15F5E60234C7DC40033835B /* AddViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D15F5E5F234C7DC40033835B /* AddViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +23,7 @@
 		374695661DB34A050001A122 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		374695691DB34A050001A122 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		3746956B1DB34A050001A122 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D15F5E5F234C7DC40033835B /* AddViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +58,7 @@
 			children = (
 				3746955F1DB34A050001A122 /* AppDelegate.swift */,
 				374695611DB34A050001A122 /* ViewController.swift */,
+				D15F5E5F234C7DC40033835B /* AddViewController.swift */,
 				374695631DB34A050001A122 /* Main.storyboard */,
 				374695661DB34A050001A122 /* Assets.xcassets */,
 				374695681DB34A050001A122 /* LaunchScreen.storyboard */,
@@ -105,6 +108,7 @@
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
 			knownRegions = (
+				English,
 				en,
 				Base,
 			);
@@ -138,6 +142,7 @@
 			files = (
 				374695621DB34A050001A122 /* ViewController.swift in Sources */,
 				374695601DB34A050001A122 /* AppDelegate.swift in Sources */,
+				D15F5E60234C7DC40033835B /* AddViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -264,7 +269,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "jp.marty-suzuki.ViewControllerBasic";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 3.0;
+				SWIFT_VERSION = 5.0;
 			};
 			name = Debug;
 		};
@@ -276,7 +281,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "jp.marty-suzuki.ViewControllerBasic";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 3.0;
+				SWIFT_VERSION = 5.0;
 			};
 			name = Release;
 		};
@@ -299,6 +304,7 @@
 				374695701DB34A050001A122 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
