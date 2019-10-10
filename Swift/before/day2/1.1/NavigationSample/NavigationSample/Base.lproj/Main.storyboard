@@ -51,15 +51,20 @@
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="GJn-ci-YL0"/>
+                    <connections>
+                        <outlet property="buttonA" destination="ZEU-mI-BZs" id="ed9-W9-5RE"/>
+                        <outlet property="buttonB" destination="7Y5-AW-g2K" id="Nr6-u5-dOs"/>
+                        <outlet property="buttonC" destination="DSk-KQ-rIR" id="FfE-LL-ol2"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="668" y="9"/>
         </scene>
-        <!--View Controller-->
+        <!--Next View Controller-->
         <scene sceneID="z7l-Ki-WR1">
             <objects>
-                <viewController id="cM4-Zo-qjy" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="NextViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="cM4-Zo-qjy" customClass="NextViewController" customModule="NavigationSample" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="Rve-Kd-dm3"/>
                         <viewControllerLayoutGuide type="bottom" id="src-I2-0ma"/>
@@ -80,6 +85,13 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="hohohoeho" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="GnP-AU-C5t">
+                                <rect key="frame" x="173" y="299" width="87" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
@@ -89,6 +101,9 @@
                             <constraint firstItem="mTh-2R-Gcf" firstAttribute="top" secondItem="Rve-Kd-dm3" secondAttribute="bottom" constant="20" id="fS3-KO-dAP"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="label" destination="GnP-AU-C5t" id="gJd-R8-fMl"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="oWR-8b-xb2" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>

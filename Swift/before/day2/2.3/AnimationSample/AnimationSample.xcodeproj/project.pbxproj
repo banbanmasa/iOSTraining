@@ -13,6 +13,7 @@
 		9D56F7231DBDE21100C8BDC6 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9D56F7211DBDE21100C8BDC6 /* Main.storyboard */; };
 		9D56F7251DBDE21100C8BDC6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9D56F7241DBDE21100C8BDC6 /* Assets.xcassets */; };
 		9D56F7281DBDE21100C8BDC6 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9D56F7261DBDE21100C8BDC6 /* LaunchScreen.storyboard */; };
+		D155CD14234F0C0100C9D09A /* ThirdViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D155CD13234F0C0100C9D09A /* ThirdViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +25,7 @@
 		9D56F7241DBDE21100C8BDC6 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		9D56F7271DBDE21100C8BDC6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		9D56F7291DBDE21100C8BDC6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D155CD13234F0C0100C9D09A /* ThirdViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThirdViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +60,7 @@
 			children = (
 				9D56F71B1DBDE21100C8BDC6 /* AppDelegate.swift */,
 				9D56F71D1DBDE21100C8BDC6 /* FirstViewController.swift */,
+				D155CD13234F0C0100C9D09A /* ThirdViewController.swift */,
 				9D56F71F1DBDE21100C8BDC6 /* SecondViewController.swift */,
 				9D56F7211DBDE21100C8BDC6 /* Main.storyboard */,
 				9D56F7241DBDE21100C8BDC6 /* Assets.xcassets */,
@@ -108,6 +111,7 @@
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
 			knownRegions = (
+				English,
 				en,
 				Base,
 			);
@@ -141,6 +145,7 @@
 			files = (
 				9D56F7201DBDE21100C8BDC6 /* SecondViewController.swift in Sources */,
 				9D56F71C1DBDE21100C8BDC6 /* AppDelegate.swift in Sources */,
+				D155CD14234F0C0100C9D09A /* ThirdViewController.swift in Sources */,
 				9D56F71E1DBDE21100C8BDC6 /* FirstViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -266,7 +271,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "jp.marty-suzuki.AnimationSample";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 3.0;
+				SWIFT_VERSION = 5.0;
 			};
 			name = Debug;
 		};
@@ -278,7 +283,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "jp.marty-suzuki.AnimationSample";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 3.0;
+				SWIFT_VERSION = 5.0;
 			};
 			name = Release;
 		};
@@ -301,6 +306,7 @@
 				9D56F72E1DBDE21100C8BDC6 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

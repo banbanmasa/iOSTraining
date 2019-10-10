@@ -31,6 +31,17 @@ class FirstViewController: UIViewController {
         super.viewDidAppear(animated)
         
         // TODO: アニメーション追加
+        moveTo(Const.ojisanMovedFrame) {
+             self.moveTo(Const.ojisanInitialFrame, completion: nil)
+         }
+    }
+
+    private func moveTo(_ frame: CGRect, completion: (() -> ())?) {
+        UIView.animate(withDuration: 2, animations: {
+            self.ojisanImageView.frame = frame
+        }) { _ in
+            completion?()
+        }
     }
 }
 

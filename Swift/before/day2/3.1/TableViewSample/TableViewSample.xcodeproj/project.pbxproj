@@ -12,6 +12,8 @@
 		9D56F7411DBDF8FA00C8BDC6 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9D56F73F1DBDF8FA00C8BDC6 /* Main.storyboard */; };
 		9D56F7431DBDF8FA00C8BDC6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9D56F7421DBDF8FA00C8BDC6 /* Assets.xcassets */; };
 		9D56F7461DBDF8FA00C8BDC6 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9D56F7441DBDF8FA00C8BDC6 /* LaunchScreen.storyboard */; };
+		D155CD16234F23E500C9D09A /* CustomCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D155CD15234F23E500C9D09A /* CustomCell.swift */; };
+		D155CD18234F243800C9D09A /* CustomCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = D155CD17234F243800C9D09A /* CustomCell.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +24,8 @@
 		9D56F7421DBDF8FA00C8BDC6 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		9D56F7451DBDF8FA00C8BDC6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		9D56F7471DBDF8FA00C8BDC6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D155CD15234F23E500C9D09A /* CustomCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomCell.swift; sourceTree = "<group>"; };
+		D155CD17234F243800C9D09A /* CustomCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CustomCell.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -57,6 +61,8 @@
 				9D56F73B1DBDF8FA00C8BDC6 /* AppDelegate.swift */,
 				9D56F73D1DBDF8FA00C8BDC6 /* ViewController.swift */,
 				9D56F73F1DBDF8FA00C8BDC6 /* Main.storyboard */,
+				D155CD17234F243800C9D09A /* CustomCell.xib */,
+				D155CD15234F23E500C9D09A /* CustomCell.swift */,
 				9D56F7421DBDF8FA00C8BDC6 /* Assets.xcassets */,
 				9D56F7441DBDF8FA00C8BDC6 /* LaunchScreen.storyboard */,
 				9D56F7471DBDF8FA00C8BDC6 /* Info.plist */,
@@ -105,6 +111,7 @@
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
 			knownRegions = (
+				English,
 				en,
 				Base,
 			);
@@ -125,6 +132,7 @@
 			files = (
 				9D56F7461DBDF8FA00C8BDC6 /* LaunchScreen.storyboard in Resources */,
 				9D56F7431DBDF8FA00C8BDC6 /* Assets.xcassets in Resources */,
+				D155CD18234F243800C9D09A /* CustomCell.xib in Resources */,
 				9D56F7411DBDF8FA00C8BDC6 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -137,6 +145,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				9D56F73E1DBDF8FA00C8BDC6 /* ViewController.swift in Sources */,
+				D155CD16234F23E500C9D09A /* CustomCell.swift in Sources */,
 				9D56F73C1DBDF8FA00C8BDC6 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -262,7 +271,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "jp.marty-suzuki.TableViewSample";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 3.0;
+				SWIFT_VERSION = 5.0;
 			};
 			name = Debug;
 		};
@@ -274,7 +283,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "jp.marty-suzuki.TableViewSample";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 3.0;
+				SWIFT_VERSION = 5.0;
 			};
 			name = Release;
 		};
@@ -297,6 +306,7 @@
 				9D56F74C1DBDF8FA00C8BDC6 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
