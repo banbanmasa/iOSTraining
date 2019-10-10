@@ -14,7 +14,12 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     var window: UIWindow?
 
 
-    func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
+    func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
+        if let navigationController = window?.rootViewController as? UINavigationController {
+            navigationController.navigationBar.setBackgroundImage(UIImage(named: "customNavBarImage1"), for: .default)
+        }
+        UINavigationBar.appearance().backgroundColor = .red
+        UIBarButtonItem.appearance().tintColor = .black
         // Override point for customization after application launch.
         return true
     }
