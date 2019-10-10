@@ -13,6 +13,8 @@
 		9DAA8B911DBD28CD00EFB19C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9DAA8B8F1DBD28CD00EFB19C /* Main.storyboard */; };
 		9DAA8B931DBD28CD00EFB19C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9DAA8B921DBD28CD00EFB19C /* Assets.xcassets */; };
 		9DAA8B961DBD28CD00EFB19C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9DAA8B941DBD28CD00EFB19C /* LaunchScreen.storyboard */; };
+		D155CD0E234EDEBE00C9D09A /* CustomizedView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D155CD0D234EDEBE00C9D09A /* CustomizedView.swift */; };
+		D155CD10234EE25E00C9D09A /* View.xib in Resources */ = {isa = PBXBuildFile; fileRef = D155CD0F234EE25E00C9D09A /* View.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +26,8 @@
 		9DAA8B921DBD28CD00EFB19C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		9DAA8B951DBD28CD00EFB19C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		9DAA8B971DBD28CD00EFB19C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D155CD0D234EDEBE00C9D09A /* CustomizedView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomizedView.swift; sourceTree = "<group>"; };
+		D155CD0F234EE25E00C9D09A /* View.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = View.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,6 +64,8 @@
 				9DAA8B8B1DBD28CD00EFB19C /* FirstViewController.swift */,
 				9DAA8B8D1DBD28CD00EFB19C /* SecondViewController.swift */,
 				9DAA8B8F1DBD28CD00EFB19C /* Main.storyboard */,
+				D155CD0F234EE25E00C9D09A /* View.xib */,
+				D155CD0D234EDEBE00C9D09A /* CustomizedView.swift */,
 				9DAA8B921DBD28CD00EFB19C /* Assets.xcassets */,
 				9DAA8B941DBD28CD00EFB19C /* LaunchScreen.storyboard */,
 				9DAA8B971DBD28CD00EFB19C /* Info.plist */,
@@ -127,6 +133,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D155CD10234EE25E00C9D09A /* View.xib in Resources */,
 				9DAA8B961DBD28CD00EFB19C /* LaunchScreen.storyboard in Resources */,
 				9DAA8B931DBD28CD00EFB19C /* Assets.xcassets in Resources */,
 				9DAA8B911DBD28CD00EFB19C /* Main.storyboard in Resources */,
@@ -141,6 +148,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				9DAA8B8E1DBD28CD00EFB19C /* SecondViewController.swift in Sources */,
+				D155CD0E234EDEBE00C9D09A /* CustomizedView.swift in Sources */,
 				9DAA8B8A1DBD28CD00EFB19C /* AppDelegate.swift in Sources */,
 				9DAA8B8C1DBD28CD00EFB19C /* FirstViewController.swift in Sources */,
 			);
