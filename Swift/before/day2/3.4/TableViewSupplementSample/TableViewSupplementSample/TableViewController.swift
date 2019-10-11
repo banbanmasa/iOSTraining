@@ -2,8 +2,8 @@
 //  TableViewController.swift
 //  TableViewSupplementSample
 //
-//  Created by 鈴木 大貴 on 2016/10/25.
-//  Copyright © 2016年 marty-suzuki. All rights reserved.
+//  Created by masanobu.ban on 2019/10/10.
+//  Copyright © 2019 marty-suzuki. All rights reserved.
 //
 
 import UIKit
@@ -13,57 +13,45 @@ class TableViewController: UITableViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        // Uncomment the following line to preserve selection between presentations
-        // self.clearsSelectionOnViewWillAppear = false
+//         tableView.register(UITableViewCell.self, forCellReuseIdentifier: "cell")
+         let refreshControl = UIRefreshControl()
 
-        // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
-        // self.navigationItem.rightBarButtonItem = self.editButtonItem()
-        
-        tableView.register(UITableViewCell.self, forCellReuseIdentifier: "cell")
-        
-        let refreshControl = UIRefreshControl()
-        
-        // refreshControllがforControlEvents:UIControlEventValueChangedを発火した時に受け取るメソッドをneedRefreshにする
-        refreshControl.addTarget(self, action: #selector(TableViewController.needRefresh(_:)), for: .valueChanged)
-        
-        // tableViewControllerのrefeshControlとしてセット
-        self.refreshControl = refreshControl
-    }
+         // refreshControllがforControlEvents:UIControlEventValueChangedを発火した時に受け取るメソッドをneedRefreshにする
+         refreshControl.addTarget(self, action: #selector(TableViewController.needRefresh(_:)), for: .valueChanged)
 
-    @objc func needRefresh(_ sender: UIRefreshControl) {
-        perform(#selector(TableViewController.finishRefresh), with: nil, afterDelay: 3)
+         // tableViewControllerのrefeshControlとしてセット
+         self.refreshControl = refreshControl
     }
     
+    @objc func needRefresh(_ sender: UIRefreshControl) {
+         perform(#selector(TableViewController.finishRefresh), with: nil, afterDelay: 3)
+     }
     @objc func finishRefresh() {
         refreshControl?.endRefreshing()
-    }
-    
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
     }
 
     // MARK: - Table view data source
 
     override func numberOfSections(in tableView: UITableView) -> Int {
         // #warning Incomplete implementation, return the number of sections
-        return 1
+        return 10
     }
 
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         // #warning Incomplete implementation, return the number of rows
-        return 10
+        return 5
     }
 
     
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: "cell", for: indexPath)
+        let cell = tableView.dequeueReusableCell(withIdentifier: "reuseIdentifier", for: indexPath)
 
         // Configure the cell...
-        cell.textLabel?.text = "hoge"
+        cell.textLabel?.text = indexPath.row.description
+
         return cell
     }
-
+    
 
     /*
     // Override to support conditional editing of the table view.
@@ -75,7 +63,7 @@ class TableViewController: UITableViewController {
 
     /*
     // Override to support editing the table view.
-    override func tableView(_ tableView: UITableView, commit editingStyle: UITableViewCellEditingStyle, forRowAt indexPath: IndexPath) {
+    override func tableView(_ tableView: UITableView, commit editingStyle: UITableViewCell.EditingStyle, forRowAt indexPath: IndexPath) {
         if editingStyle == .delete {
             // Delete the row from the data source
             tableView.deleteRows(at: [indexPath], with: .fade)
@@ -105,7 +93,7 @@ class TableViewController: UITableViewController {
 
     // In a storyboard-based application, you will often want to do a little preparation before navigation
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destinationViewController.
+        // Get the new view controller using segue.destination.
         // Pass the selected object to the new view controller.
     }
     */

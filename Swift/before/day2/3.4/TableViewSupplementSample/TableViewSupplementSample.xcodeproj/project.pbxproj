@@ -12,6 +12,7 @@
 		9DC3DCAB1DBE542000EE270D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9DC3DCA91DBE542000EE270D /* Main.storyboard */; };
 		9DC3DCAD1DBE542000EE270D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9DC3DCAC1DBE542000EE270D /* Assets.xcassets */; };
 		9DC3DCB01DBE542000EE270D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9DC3DCAE1DBE542000EE270D /* LaunchScreen.storyboard */; };
+		D155CD1C234F3B7C00C9D09A /* TableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D155CD1B234F3B7C00C9D09A /* TableViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +23,7 @@
 		9DC3DCAC1DBE542000EE270D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		9DC3DCAF1DBE542000EE270D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		9DC3DCB11DBE542000EE270D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D155CD1B234F3B7C00C9D09A /* TableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +58,7 @@
 			children = (
 				9DC3DCA51DBE542000EE270D /* AppDelegate.swift */,
 				9DC3DCA71DBE542000EE270D /* ViewController.swift */,
+				D155CD1B234F3B7C00C9D09A /* TableViewController.swift */,
 				9DC3DCA91DBE542000EE270D /* Main.storyboard */,
 				9DC3DCAC1DBE542000EE270D /* Assets.xcassets */,
 				9DC3DCAE1DBE542000EE270D /* LaunchScreen.storyboard */,
@@ -105,6 +108,7 @@
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
 			knownRegions = (
+				English,
 				en,
 				Base,
 			);
@@ -137,6 +141,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				9DC3DCA81DBE542000EE270D /* ViewController.swift in Sources */,
+				D155CD1C234F3B7C00C9D09A /* TableViewController.swift in Sources */,
 				9DC3DCA61DBE542000EE270D /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -262,7 +267,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "jp.marty-suzuki.TableViewSupplementSample";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 3.0;
+				SWIFT_VERSION = 5.0;
 			};
 			name = Debug;
 		};
@@ -274,7 +279,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "jp.marty-suzuki.TableViewSupplementSample";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 3.0;
+				SWIFT_VERSION = 5.0;
 			};
 			name = Release;
 		};
@@ -297,6 +302,7 @@
 				9DC3DCB61DBE542000EE270D /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
