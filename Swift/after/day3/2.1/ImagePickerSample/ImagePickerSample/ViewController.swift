@@ -36,9 +36,10 @@ class ViewController: UIViewController {
 
 //MARK: - UIImagePickerControllerDelegate, UINavigationControllerDelegate
 extension ViewController: UIImagePickerControllerDelegate, UINavigationControllerDelegate {
-    //TODO: delegateメソッドの追加
-    func imagePickerController(_ picker: UIImagePickerController, didFinishPickingMediaWithInfo info: [String : Any]) {
-        dismiss(animated: true, completion: nil)
-        imageView.image = info[UIImagePickerControllerEditedImage] as? UIImage
+    func imagePickerController(_ picker: UIImagePickerController, didFinishPickingMediaWithInfo info: [UIImagePickerController.InfoKey : Any]) {
+       dismiss(animated: true, completion: nil)
+
+       imageView.image = info[.originalImage] as? UIImage
     }
 }
+

@@ -24,6 +24,7 @@ class ClosureSample {
 extension Array {
     func myfilter(_ isIncluded: (Element) -> Bool) -> [Element] {
         var elements: [Element] = []
+        print(self)
         for element in self where isIncluded(element) {
             elements += [element]
         }
