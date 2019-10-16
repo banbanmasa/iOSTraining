@@ -60,6 +60,20 @@ class ViewController: UIViewController {
     @IBAction func readSettingButtonTapped(_ sender: UIButton) {
         guard let text = UserDefaults.standard.string(forKey: "next_text_field") else { return }
         print("next_text_field = " + text)
+        let jsonString = "{" +
+        "    \"employees\" : [" +
+        "        { \"lastName\" : \"Doe\", \"firstName\" : \"John\" }," +
+        "        { \"lastName\" : \"Smith\", \"firstName\" : \"Anna\" }," +
+        "        { \"lastName\" : \"Jones\", \"firstName\" : \"Peter\" }" +
+        "    ]" +
+        "}"
+        let data = jsonString.data(using: String.Encoding.utf8)!
+        do {
+            let object = try JSONSerialization.jsonObject(with: data, options: .mutableContainers)
+            print(object)
+        } catch let e {
+            print(e)
+        }
     }
     @IBAction func deleteButtonTapped(_ sender: UIButton) {
         guard let fileUrl = fileUrl() else {
