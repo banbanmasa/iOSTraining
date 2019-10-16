@@ -14,7 +14,11 @@ class ViewController: UIViewController {
     let webView = WKWebView(frame: .zero, configuration: WKWebViewConfiguration())
     
     // TODO: ボタン変数を追加
-
+    var backButton: UIBarButtonItem = { return UIBarButtonItem(title: "back", style: .plain, target: self, action: #selector(ViewController.backButtonTapped))}()
+    var forwardButton: UIBarButtonItem = { return UIBarButtonItem(title: "forward", style: .plain, target: self, action: #selector(ViewController.forwardButtonTapped(_ :)))}()
+    var reloadButton: UIBarButtonItem =  { return UIBarButtonItem(title: "reload", style: .plain, target: self, action: #selector(ViewController.reloadButtonTapped(_ :)))}()
+    var observation: NSKeyValueObservation?
+    var observation2: NSKeyValueObservation?
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -30,13 +34,28 @@ class ViewController: UIViewController {
             NSLayoutConstraint(item: webView, attribute: .bottom, relatedBy: .equal, toItem: view, attribute: .bottom, multiplier: 1, constant: 0)
         ])
         
-        guard let url = URL(string: "https://abematimes.com/pages/381282/archives") else { return }
+        guard let url = URL(string: "https://github.com/apple") else { return }
         let request = URLRequest(url: url)
         webView.load(request)
         
         // TODO: toolbarにボタンを追加
+        navigationController?.isToolbarHidden = false
+        backButton.isEnabled = false
+        forwardButton.isEnabled = false
+        toolbarItems = [backButton, forwardButton, reloadButton]
         
         // TODO: KVOでwebView.canGoBack, webView.canGoForwardを監視
+        observation = webView.observe( \.canGoBack, options: [.old, .new]) { [weak self](_, canGoback) in
+            if let hoge = canGoback.newValue {
+                self?.backButton.isEnabled = hoge
+            }
+        }
+        observation2 = webView.observe( \.canGoForward, options: [.old, .new]) { [weak self](_, canGoForward) in
+            if let hoge = canGoForward.newValue {
+                self?.forwardButton.isEnabled = hoge
+            }
+        }
+        
     }
 
     override func didReceiveMemoryWarning() {
@@ -45,9 +64,22 @@ class ViewController: UIViewController {
     }
     
     // TODO: toolbarのボタンが押された時の処理
+    @objc func backButtonTapped(_ sender: UIBarButtonItem) {
+              webView.goBack()
+       }
+    @objc func forwardButtonTapped(_ sender: UIBarButtonItem) {
+           webView.goForward()
+    }
+    @objc func reloadButtonTapped(_ sender: UIBarButtonItem) {
+              webView.reload()
+       }
     
 }
 
 extension ViewController: WKNavigationDelegate {
     // TODO: 読み込み完了のデリゲートメソッド追加、タイトルの変更など
+    func webView(_ webView: WKWebView, decidePolicyFor navigationAction: WKNavigationAction, decisionHandler: @escaping (WKNavigationActionPolicy) -> Void) {
+        print(navigationAction.request.url)
+        decisionHandler(.allow)
+    }
 }
