@@ -21,7 +21,7 @@ iOS10からプライバシー情報へアクセスする際に、Info.plistに�
 ![](./images/2_1/image1.png)
 
 これを明記しなかった場合、プライバシー情報にアクセスした際にクラッシュします。  
-フォトライブラリにアクセス刷る場合は`NSPhotoLibraryUsageDescription`を記述します。
+フォトライブラリにアクセスする場合は`NSPhotoLibraryUsageDescription`を記述します。
 
 ```
 <key>NSPhotoLibraryUsageDescription</key>
@@ -65,17 +65,17 @@ UIImagePickerController の mediaType は public.image で写真のみの選択�
 ## delegate の実装
 
 ```swift
-func imagePickerController(_ picker: UIImagePickerController, didFinishPickingMediaWithInfo info: [String : Any])
+func imagePickerController(_ picker: UIImagePickerController, didFinishPickingMediaWithInfo info: [UIImagePickerController.InfoKey : Any]) {
 ```
 
 を実装して、写真選択完了のイベントを取得しましょう。
 
 ```swift
 extension ViewController: UIImagePickerControllerDelegate, UINavigationControllerDelegate {
-    func imagePickerController(_ picker: UIImagePickerController, didFinishPickingMediaWithInfo info: [String : Any]) {
-        dismiss(animated: true, completion: nil)
+    func imagePickerController(_ picker: UIImagePickerController, didFinishPickingMediaWithInfo info: [UIImagePickerController.InfoKey : Any]) {
+       dismiss(animated: true, completion: nil)
 
-        imageView.image = info[UIImagePickerControllerOriginalImage] as? UIImage
+       imageView.image = info[.originalImage] as? UIImage
     }
 }
 ```

@@ -39,9 +39,25 @@ func main() {
 //    print(after) // ["hoge", "fuga", "piyo", "foo", "bar"]
 }
 
-main()
+//main()
 
 // name = Swift
 // ["hoge", "fuga", "piyo", "foo", "bar"]
 // deinit
 //　という出力結果になるように実装してください。
+
+let queue = DispatchQueue(label: "com.sample.barrier", attributes: .concurrent)
+var string = ""
+for i in 0..<99 {
+    guard i % 10 == 0 else {
+        queue.async { // 読み込み処理
+            print("\(i) : string = " + string)
+        }
+        continue
+    }
+    queue.async { // 書き込み処理
+        let range = string.startIndex..<string.index(string.startIndex, offsetBy: string.charact.count)
+        string.removeSubrange(range)
+        string += "\(i)"
+    }
+}
