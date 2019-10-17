@@ -19,13 +19,13 @@ class ViewController: UIViewController {
         tableView.dataSource = self
         tableView.delegate = self
         tableView.register(UITableViewCell.self, forCellReuseIdentifier: "cell")
+ 
     }
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
-
 
 }
 
@@ -54,11 +54,25 @@ extension ViewController: UITableViewDataSource {
 }
 
 extension ViewController: UITableViewDelegate {
-    // TODO: ヘッダの高さを返す
-    
-    // TODO: ヘッダの内容を返す
+ 
+    func tableView(_ tableView: UITableView, heightForHeaderInSection section: Int) -> CGFloat {
+        return 120
+    }
+
+    func tableView(_ tableView: UITableView, viewForHeaderInSection section: Int) -> UIView? {
+        let view = UIView(frame: .zero)
+        view.backgroundColor = .red
+        return view
+    }
     
     // TODO: フッタの高さを返す
-    
+    func tableView(_ tableView: UITableView, heightForFooterInSection section: Int) -> CGFloat {
+        return 20
+    }
     // TODO: フッタの内容を返す
+    func tableView(_ tableView: UITableView, viewForFooterInSection section: Int) -> UIView?{
+        let view = UIView(frame: .zero)
+        view.backgroundColor = .blue
+        return view
+    }
 }

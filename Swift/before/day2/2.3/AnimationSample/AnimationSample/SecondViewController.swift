@@ -21,15 +21,24 @@ class SecondViewController: UIViewController {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
         
-        // TODO: ojisanImageView1の追加
+         // TODO: ojisanImageView1の追加
+        ojisanImageView1.frame = Const.ojisanInitialFrame
+        view.addSubview(ojisanImageView1)
         
         // TODO: ojisanImageView2の追加
+        ojisanImageView2.frame = Const.ojisanInitialFrame
+        view.addSubview(ojisanImageView2)
         
         // TODO: ojisanImageView2を非表示にしておく
+        ojisanImageView2.isHidden = true
     }
 
     override func viewDidAppear(_ animated: Bool) {
         super.viewDidAppear(animated)
+        UIView.transition(with: view, duration: 3, options: .transitionCurlUp, animations: {
+             self.ojisanImageView1.isHidden = true
+             self.ojisanImageView2.isHidden = false
+         }, completion: nil)
     }
     
     override func didReceiveMemoryWarning() {
