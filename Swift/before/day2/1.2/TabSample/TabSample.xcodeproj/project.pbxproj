@@ -13,6 +13,9 @@
 		9DDD721F1DBCBCB7007CEE74 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9DDD721D1DBCBCB7007CEE74 /* Main.storyboard */; };
 		9DDD72211DBCBCB7007CEE74 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9DDD72201DBCBCB7007CEE74 /* Assets.xcassets */; };
 		9DDD72241DBCBCB7007CEE74 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9DDD72221DBCBCB7007CEE74 /* LaunchScreen.storyboard */; };
+		D155CD0B234EBF3600C9D09A /* FourthViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D155CD09234EBF3600C9D09A /* FourthViewController.swift */; };
+		D155CD0C234EBF3600C9D09A /* FourthViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = D155CD0A234EBF3600C9D09A /* FourthViewController.xib */; };
+		D19DFDED234DD92C0045D19B /* ThirdViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D19DFDEC234DD92C0045D19B /* ThirdViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +27,9 @@
 		9DDD72201DBCBCB7007CEE74 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		9DDD72231DBCBCB7007CEE74 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		9DDD72251DBCBCB7007CEE74 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D155CD09234EBF3600C9D09A /* FourthViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FourthViewController.swift; sourceTree = "<group>"; };
+		D155CD0A234EBF3600C9D09A /* FourthViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = FourthViewController.xib; sourceTree = "<group>"; };
+		D19DFDEC234DD92C0045D19B /* ThirdViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThirdViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,7 +64,10 @@
 			children = (
 				9DDD72171DBCBCB7007CEE74 /* AppDelegate.swift */,
 				9DDD72191DBCBCB7007CEE74 /* FirstViewController.swift */,
+				D155CD09234EBF3600C9D09A /* FourthViewController.swift */,
+				D155CD0A234EBF3600C9D09A /* FourthViewController.xib */,
 				9DDD721B1DBCBCB7007CEE74 /* SecondViewController.swift */,
+				D19DFDEC234DD92C0045D19B /* ThirdViewController.swift */,
 				9DDD721D1DBCBCB7007CEE74 /* Main.storyboard */,
 				9DDD72201DBCBCB7007CEE74 /* Assets.xcassets */,
 				9DDD72221DBCBCB7007CEE74 /* LaunchScreen.storyboard */,
@@ -108,6 +117,7 @@
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
 			knownRegions = (
+				English,
 				en,
 				Base,
 			);
@@ -126,6 +136,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D155CD0C234EBF3600C9D09A /* FourthViewController.xib in Resources */,
 				9DDD72241DBCBCB7007CEE74 /* LaunchScreen.storyboard in Resources */,
 				9DDD72211DBCBCB7007CEE74 /* Assets.xcassets in Resources */,
 				9DDD721F1DBCBCB7007CEE74 /* Main.storyboard in Resources */,
@@ -141,7 +152,9 @@
 			files = (
 				9DDD721C1DBCBCB7007CEE74 /* SecondViewController.swift in Sources */,
 				9DDD72181DBCBCB7007CEE74 /* AppDelegate.swift in Sources */,
+				D19DFDED234DD92C0045D19B /* ThirdViewController.swift in Sources */,
 				9DDD721A1DBCBCB7007CEE74 /* FirstViewController.swift in Sources */,
+				D155CD0B234EBF3600C9D09A /* FourthViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -266,7 +279,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "szk-atmosphere.TabSample";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 3.0;
+				SWIFT_VERSION = 5.0;
 			};
 			name = Debug;
 		};
@@ -278,7 +291,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "szk-atmosphere.TabSample";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 3.0;
+				SWIFT_VERSION = 5.0;
 			};
 			name = Release;
 		};
@@ -301,6 +314,7 @@
 				9DDD722A1DBCBCB7007CEE74 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
