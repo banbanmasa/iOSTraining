@@ -10,6 +10,7 @@ import UIKit
 
 class ViewController: UIViewController {
     
+    @IBOutlet weak var label: UILabel!
     // TODO: プロパティの追加
     let sampleVC: SampleViewController = SampleViewController(nibName: "SampleViewController", bundle: nil)
     
@@ -20,7 +21,9 @@ class ViewController: UIViewController {
         // TODO: MixiSampleViewControllerの追加
         view.addSubview(sampleVC.view)
     }
-
+    @IBAction func buttonTapped(_ sender: UIButton) {
+        label.text = "YES"
+    }
     override func viewDidLayoutSubviews() {
         super.viewDidLayoutSubviews()
         sampleVC.view.frame = view.bounds

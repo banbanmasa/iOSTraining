@@ -10,7 +10,7 @@ import UIKit
 
 class ViewController: UIViewController {
     
-    // TODO: プロパティの追加
+    @IBOutlet weak var label: UILabel!
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -23,7 +23,10 @@ class ViewController: UIViewController {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
-
+    
+    @IBAction func buttonTapped(_ sender: UIButton) {
+        label.text = "YES"
+    }
 
 }
 
