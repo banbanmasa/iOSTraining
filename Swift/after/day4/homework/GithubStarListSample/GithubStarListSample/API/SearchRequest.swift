@@ -42,10 +42,12 @@ struct SearchRequest: GithubRequestable {
     }
     
     static func decode(_ data: Data) -> DecodedResultType? {
-        let json = JSON(data: data)
-        guard let items = json["items"].array else {
-            return nil
-        }
-        return items.flatMap { GithubRepository(json: $0) }
+        
+//        let json = JSON(data: data)
+//        guard let items = json["items"].array else {
+//            return nil
+//        }
+//        return items.flatMap { GithubRepository(json: $0) }
+        return DecodedResultType.init()
     }
 }

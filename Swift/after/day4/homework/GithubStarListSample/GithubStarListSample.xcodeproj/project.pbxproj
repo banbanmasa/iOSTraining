@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		37C232341DF438D9007FA7BA /* UIAlertController+Retry.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37C232331DF438D9007FA7BA /* UIAlertController+Retry.swift */; };
+		37C6F90C4F714205092661D0 /* Pods_GithubStarListSample.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 427B595CE80F4C127EF1C02C /* Pods_GithubStarListSample.framework */; };
 		9D3CE0671DCF00800002F030 /* GithubUser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D3CE0661DCF00800002F030 /* GithubUser.swift */; };
 		9D714D7A1DCDC0CE00736336 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D714D791DCDC0CE00736336 /* AppDelegate.swift */; };
 		9D714D7C1DCDC0CE00736336 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D714D7B1DCDC0CE00736336 /* ViewController.swift */; };
@@ -30,6 +31,8 @@
 
 /* Begin PBXFileReference section */
 		37C232331DF438D9007FA7BA /* UIAlertController+Retry.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIAlertController+Retry.swift"; sourceTree = "<group>"; };
+		427B595CE80F4C127EF1C02C /* Pods_GithubStarListSample.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_GithubStarListSample.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		97107A98318D51FBC9C1BC8F /* Pods-GithubStarListSample.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GithubStarListSample.debug.xcconfig"; path = "Target Support Files/Pods-GithubStarListSample/Pods-GithubStarListSample.debug.xcconfig"; sourceTree = "<group>"; };
 		9D3CE0661DCF00800002F030 /* GithubUser.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GithubUser.swift; sourceTree = "<group>"; };
 		9D714D761DCDC0CE00736336 /* GithubStarListSample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GithubStarListSample.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9D714D791DCDC0CE00736336 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -50,6 +53,7 @@
 		9D714DA31DCDD38E00736336 /* GithubTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GithubTableViewCell.swift; sourceTree = "<group>"; };
 		9D714DA41DCDD38E00736336 /* GithubTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = GithubTableViewCell.xib; sourceTree = "<group>"; };
 		9D714DA71DCDDEF600736336 /* Kingfisher.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Kingfisher.framework; path = Carthage/Build/iOS/Kingfisher.framework; sourceTree = "<group>"; };
+		F3E54A0E5BBE538937BC5AAA /* Pods-GithubStarListSample.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GithubStarListSample.release.xcconfig"; path = "Target Support Files/Pods-GithubStarListSample/Pods-GithubStarListSample.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,12 +64,23 @@
 				9D714DA81DCDDEF600736336 /* Kingfisher.framework in Frameworks */,
 				9D714D901DCDC21700736336 /* Alamofire.framework in Frameworks */,
 				9D714D911DCDC21700736336 /* SwiftyJSON.framework in Frameworks */,
+				37C6F90C4F714205092661D0 /* Pods_GithubStarListSample.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		3386F17713AA49981F584DE7 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				97107A98318D51FBC9C1BC8F /* Pods-GithubStarListSample.debug.xcconfig */,
+				F3E54A0E5BBE538937BC5AAA /* Pods-GithubStarListSample.release.xcconfig */,
+			);
+			name = Pods;
+			path = Pods;
+			sourceTree = "<group>";
+		};
 		9D714D6D1DCDC0CE00736336 = {
 			isa = PBXGroup;
 			children = (
@@ -73,6 +88,7 @@
 				9D714D781DCDC0CE00736336 /* GithubStarListSample */,
 				9D714D771DCDC0CE00736336 /* Products */,
 				9D714D8D1DCDC21700736336 /* Frameworks */,
+				3386F17713AA49981F584DE7 /* Pods */,
 			);
 			sourceTree = "<group>";
 		};
@@ -107,6 +123,7 @@
 				9D714DA71DCDDEF600736336 /* Kingfisher.framework */,
 				9D714D8E1DCDC21700736336 /* Alamofire.framework */,
 				9D714D8F1DCDC21700736336 /* SwiftyJSON.framework */,
+				427B595CE80F4C127EF1C02C /* Pods_GithubStarListSample.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -156,10 +173,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 9D714D881DCDC0CE00736336 /* Build configuration list for PBXNativeTarget "GithubStarListSample" */;
 			buildPhases = (
+				63DA74D1048A5CF6B4B60A00 /* [CP] Check Pods Manifest.lock */,
 				9D714D721DCDC0CE00736336 /* Sources */,
 				9D714D731DCDC0CE00736336 /* Frameworks */,
 				9D714D741DCDC0CE00736336 /* Resources */,
 				9D714D921DCDC22300736336 /* ShellScript */,
+				715C138568CBD5C4B7D5CB13 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -191,6 +210,7 @@
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
 			knownRegions = (
+				English,
 				en,
 				Base,
 			);
@@ -220,6 +240,50 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
+		63DA74D1048A5CF6B4B60A00 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-GithubStarListSample-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		715C138568CBD5C4B7D5CB13 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-GithubStarListSample/Pods-GithubStarListSample-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
+				"${BUILT_PRODUCTS_DIR}/Kingfisher/Kingfisher.framework",
+				"${BUILT_PRODUCTS_DIR}/SwiftyJSON/SwiftyJSON.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Kingfisher.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SwiftyJSON.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-GithubStarListSample/Pods-GithubStarListSample-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
 		9D714D921DCDC22300736336 /* ShellScript */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -325,6 +389,7 @@
 				SDKROOT = iphoneos;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 4.2;
 			};
 			name = Debug;
 		};
@@ -366,12 +431,14 @@
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
 				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				SWIFT_VERSION = 4.2;
 				VALIDATE_PRODUCT = YES;
 			};
 			name = Release;
 		};
 		9D714D891DCDC0CE00736336 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 97107A98318D51FBC9C1BC8F /* Pods-GithubStarListSample.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				FRAMEWORK_SEARCH_PATHS = (
@@ -382,12 +449,13 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "szk-atmosphere.GithubStarListSample";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 3.0;
+				SWIFT_VERSION = 4.2;
 			};
 			name = Debug;
 		};
 		9D714D8A1DCDC0CE00736336 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = F3E54A0E5BBE538937BC5AAA /* Pods-GithubStarListSample.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				FRAMEWORK_SEARCH_PATHS = (
@@ -398,7 +466,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "szk-atmosphere.GithubStarListSample";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 3.0;
+				SWIFT_VERSION = 4.2;
 			};
 			name = Release;
 		};
